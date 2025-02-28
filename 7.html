@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bar lo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-container {
+            display: flex;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .image-section img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .details-section {
+            margin-left: 20px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .discounted {
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .save {
+            color: #5cb85c;
+            font-size: 14px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select{
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-btn {
+            background: #d9534f;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .order-btn:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-container">
+        <div class="image-section">
+            <img src="images/7.avif">
+        </div>
+        <div class="details-section">
+            <h2>Customize Name Personalized</h2>
+            <p class="price"><del>Rs. 359.00</del> <span class="discounted">Rs. 110.00</span></p>
+            <p class="save">You Save: Rs. 134.00 (65%)</p>
+            <label for="name1">Enter Name 1:</label>
+            <input type="text" id="name1" placeholder="Enter Your Name 1">
+            <label for="name2">Enter Name 2:</label>
+            <input type="text" id="name2" placeholder="Enter Your Name 2">
+            <label for="name3">Enter Name 3:</label>
+            <input type="text" id="name3" placeholder="Enter Your Name 3">
+            <div class="form-container">
+                <h2>Delivery Information</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="city" placeholder="City" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="states">
+                            <option value="">--Select State--</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OD">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UK">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="DL">Delhi</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="LA">Ladakh</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="PY">Puducherry</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="pincode" placeholder="Pin Code" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Phone" required>
+                    </div>
+                    <button class="order-btn" onclick="A()">Now - Payment</button>
+    
+                </form>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function A(){
+        window.location.href="upi://pay?pa=dawarkil57@oksbi&pn=zivifashion&mc=0000&tid=1234567890&tr=9876543210&tn=Payment for Order&am=110.00&cu=INR";
+
+    }
+   
+
+</script>
+</html>

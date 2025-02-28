@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zivi Fashion Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+
+    <style>
+        .logo img {
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .products {
+            text-align: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .product button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #b88086;
+            padding: 15px;
+            color: white;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: center;
+            max-width: 30%;
+            text-align: left;
+        }
+
+        .info-box img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <a href="#" class="logo navbar-brand text-primary font-weight-bold"><img src="images/Zivi_Logo_328x.avif"></a>
+        <button class="navbar-toggler" id="b1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collnav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <section class="banner">
+        <img src="images/Zivi_Fashion_1_1343x.progressive.png.webp" alt="Fashion Banner">
+
+    </section>
+
+    <section class="products">
+        <h2>SHOP PERSONALIZED</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/6.jpg" alt="Product 1">
+                <h4> Customize Name Ring</h4>
+                <p>&#8377;199</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="6.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/4.avif" alt="Product 2">
+                <h4>Customize Name Necklace</h4>
+                <p>&#8377;210</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="4.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/7.avif" alt="Product 2">
+                <h4>Customize Name Personalized</h4>
+                <p>&#8377;115</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="7.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/3.webp" alt="Product 2">
+                <h4>Engraved Name Ring</h4>
+                <p>&#8377;145</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="3.html">Buy</a></button>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/Angel.webp" alt="Product 1">
+                <h4> Angel Wings Name Necklace</h4>
+                <p>&#8377;180</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="angel.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/name single.webp" alt="Product 2">
+                <h4>Customize Sinlge Name Necklace</h4>
+                <p>&#8377;119</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="single name.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/pic locket.webp" alt="Product 2">
+                <h4>Customize Photo Necklace for Men and Women Combo</h4>
+                <p>&#8377;178</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="pic.html">Buy</a></button>
+            </div>
+            <div class="product">
+                <img src="images/8.webp" alt="Product 2">
+                <h4>Magnetic Heart Necklace</h4>
+                <p>&#8377;134</p>
+                <p>🚚 Free Delivery</p>
+                <button><a href="8.html">Buy</a></button>
+            </div>
+        </div>
+    </section>
+    <div class="info-section">
+        <div class="info-box">
+            <img src="images/delivery.webp" alt="Delivery Time">
+            <p><strong>Delivery Time :</strong> It will take around 3-4 days to deliver your order as it is a
+                personalized product. We need little time to craft your jewel.</p>
+        </div>
+        <div class="info-box">
+            <img src="images/return.webp" alt="Returns & Refunds">
+            <p><strong>Returns & Refunds :</strong> You can return any item purchased on @zivifashion within 5 days of
+                the delivery date.</p>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2025 Zivi Fashion. All rights reserved.</p>
+    </footer>
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#b1").click(function () {
+            $("#collnav").slideToggle(1000);
+        });
+
+    });
+    
+</script>
+
+</html>
